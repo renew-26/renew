@@ -1,0 +1,46 @@
+// 임시
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  height: 80px;
+  border-bottom: 1px solid #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-container {
+  height: 100dvh;
+  border-bottom: 1px solid #000;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  > * {
+    text-align: center;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  height: 80px;
+  border-top: 1px solid #000;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
