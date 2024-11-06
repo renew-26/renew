@@ -23,9 +23,10 @@ export default [
       'import/resolver': {
         alias: {
           map: [
-            ['@utils', './src/utils'],
             ['@components', './src/components'],
-            ['@styles', './src/styles']
+            ['@layout', './src/components/layout'],
+            ['@styles', './src/styles'],
+            ['@utils', './src/utils'],
           ],
           extensions: ['.js', '.jsx', '.ts', '.tsx', '.scss']
         }

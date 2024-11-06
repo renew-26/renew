@@ -1,13 +1,13 @@
 import { Heading } from 'hyun-design-system';
 
 import '@styles/style.scss';
-import Header from '@components/Header';
+import LayoutHeader from '@layout/Header';
 import SectionTitle from '@components/SectionTitle';
 
 function App() {
   return (
     <>
-      <Header />
+      <LayoutHeader />
       <section>
         <div className="container w-container">
           <Heading>Section</Heading>
