@@ -1,6 +1,8 @@
 import React from 'react';
-import classNames from '../../utils/classNames';
+
 import { Heading } from 'hyun-design-system';
+
+import classNames from '@utils/classNames';
 
 const Header = () => {
   const PREFIX = 'header';
