@@ -30,6 +30,7 @@
     "hyun-design-system": "^1.0.7",
     "prettier": "^3.2.4",
     "sass": "^1.80.6",
+    "swiper": "^11.1.14",
     "typescript": "~5.4.2"
   },
   "homepage": "https://renew-26.github.io/renew/"

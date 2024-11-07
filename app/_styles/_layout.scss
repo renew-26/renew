@@ -1,4 +1,4 @@
-// 임시
+// Header
 .header {
   display: flex;
   align-items: center;
@@ -8,17 +8,17 @@
   border-bottom: 1px solid #000;
 }
 
-.container {
+// Nav
+.footer {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  color: #000;
+  height: 80px;
+  border-top: 1px solid #000;
 }
 
-.w-container {
-  height: 100dvh;
-  border-bottom: 1px solid #000;
-}
-
+// Footer
 .section-title {
   display: flex;
   flex-direction: column;
@@ -29,18 +29,44 @@
   }
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-  height: 80px;
-  border-top: 1px solid #000;
-}
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.section {
   height: 100dvh;
+
+  &-hero {
+    background-color: #f1f2f5;
+  }
+
+  .content-wrap {
+    padding: 120px 0;
+    text-align: center;
+
+    .text {
+      margin-top: 20px;
+    }
+
+    .btn {
+      margin-top: 20px;
+    }
+
+    .slide-wrap {
+      position: relative;
+      max-width: 800px;
+      height: 500px;
+      margin: 40px auto 0;
+
+      .swiper {
+        height: 100%;
+      }
+    }
+
+    .mobile-line {
+      display: none;
+    }
+
+    @media screen and (max-width: 991px) {
+      .mobile-line {
+        display: block;
+      }
+    }
+  }
 }

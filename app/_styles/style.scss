@@ -1,5 +1,11 @@
-@use 'root';
-@use 'reset';
-@use 'base';
+// Variables
+@import './hds/variables';
+@import './hds/root';
 
-@use 'layout';
+// HDS
+@import 'hyun-design-system/dist/style.css';
+
+// Project
+@import './hds/base';
+@import 'layout';
+@import 'app';
