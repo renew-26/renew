@@ -1,0 +1,49 @@
+// Box 스타일
+.box {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding-left: var(--hds-12);
+  padding-right: var(--hds-12);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--hds-5);
+
+  &--outline {
+    border-color: var(--gray250);
+  }
+
+  &--gray {
+    background-color: var(--gray150);
+    border-color: var(--gray150);
+  }
+
+  &--blue {
+    background-color: var(--information);
+    border-color: var(--information);
+  }
+
+  &--green {
+    background-color: var(--positive);
+    border-color: var(--positive);
+  }
+
+  &--orange {
+    background-color: var(--caution);
+    border-color: var(--caution);
+  }
+
+  @media screen and (max-width: 991px) {
+    padding-left: var(--hds-8);
+    padding-right: var(--hds-8);
+    border-radius: var(--hds-4);
+  }
+
+  @media screen and (max-width: 512px) {
+    padding-left: var(--hds-5);
+    padding-right: var(--hds-5);
+    border-radius: var(--hds-4);
+  }
+}
+
+
