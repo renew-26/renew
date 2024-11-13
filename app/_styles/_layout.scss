@@ -16,7 +16,7 @@
   align-items: stretch;
   justify-content: center;
   min-height: 100px;
-  padding: var(--hds-6) 0 var(--hds-5);
+  padding: var(--hds-6) 0 var(--hds-10);
   border-top: 1px solid var(--gray250);
 
   .container {
@@ -66,6 +66,7 @@
   }
 
   @media screen and (max-width: 512px) {
+
     &-copyright {
       flex-direction: column;
       row-gap: var(--hds-2);
