@@ -22,7 +22,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    row-gap: var(--hds-5);
+    row-gap: var(--hds-4);
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -48,7 +48,12 @@
       border-radius: var(--hds-1);
     }
   }
-  
+
+  &-copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+
   @media screen and (max-width: 991px) {
     &-info {
       flex-direction: column;
@@ -57,6 +62,13 @@
 
     &-link {
       justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 512px) {
+    &-copyright {
+      flex-direction: column;
+      row-gap: var(--hds-2);
     }
   }
 }
