@@ -1,4 +1,6 @@
-// Box 스타일
+// App Component Style
+
+// AppBox
 .box {
   position: relative;
   width: 100%;
@@ -9,13 +11,14 @@
   border-style: solid;
   border-radius: var(--hds-5);
 
-  &--outline {
-    border-color: var(--gray250);
-  }
-
   &--gray {
     background-color: var(--gray150);
     border-color: var(--gray150);
+
+    &.box--outline {
+      border-color: var(--gray250);
+      background-color: var(--white);
+    }
   }
 
   &--blue {
@@ -46,4 +49,44 @@
   }
 }
 
+// StepTitle
+.step-title {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--hds-4);
 
+  & > * {
+    line-height: 120%;
+    transition: font-size 0.25s;
+  }
+
+  .h1 {
+    font-size: var(--hds-11);
+  }
+
+  .text {
+    font-size: var(--hds-6);
+  }
+
+  @media screen and (max-width: 991px) {
+    row-gap: var(--hds-3);
+
+    .h1 {
+      font-size: var(--hds-10);
+    }
+
+    .text {
+      font-size: var(--hds-5);
+    }
+  }
+
+  @media screen and (max-width: 512px) {
+    .h1 {
+      font-size: var(--hds-8);
+    }
+
+    .text {
+      font-size: 18px;
+    }
+  }
+}
