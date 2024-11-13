@@ -10,7 +10,7 @@ interface AppBoxProps {
 }
 
 const AppBox: React.FC<AppBoxProps> = ({ children, bg = 'gray', outline = false, className }) => {
-  const PREFIX = 'app-box';
+  const PREFIX = 'box';
 
   return (
     <div
