@@ -10,10 +10,11 @@ interface AppAosProps {
   children: React.ReactNode;
   animation?: 'fade-up' | 'fade-in';
   duration?: number;
+  delay?: number;
   className?: string | string[];
 }
 
-const AppAos: React.FC<AppAosProps> = ({ children, animation = 'fade-up', duration = 1000, className }) => {
+const AppAos: React.FC<AppAosProps> = ({ children, animation = 'fade-up', duration = 1000, delay = 0, className }) => {
   const PREFIX = 'step-title';
 
   useEffect(() => {
@@ -26,6 +27,7 @@ const AppAos: React.FC<AppAosProps> = ({ children, animation = 'fade-up', durati
     <div
       data-aos={animation}
       data-aos-duration={duration}
+      data-aos-delay={delay}
       className={classNames(PREFIX, Array.isArray(className) ? className.join(' ') : className)}
     >
       {children}
