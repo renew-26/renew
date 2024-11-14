@@ -10,7 +10,7 @@ const Home = () => {
       <Container>
         <div className="content-wrap">
           <StepTitle>
-            <Heading>Heading Text Heading Text</Heading>
+            <Heading level="h2">Heading Text Heading Text</Heading>
             <Text size="xl" color="primary">
               Normal Text Normal Text Normal Text Normal Text Normal Text
               <br />
@@ -22,7 +22,7 @@ const Home = () => {
       <Container>
         <div className="content-wrap">
           <StepTitle>
-            <Heading>Heading Text Heading Text</Heading>
+            <Heading level="h2">Heading Text Heading Text</Heading>
             <Text size="xl" color="primary">
               Normal Text Normal Text Normal Text Normal Text Normal Text
               <br />
@@ -34,7 +34,7 @@ const Home = () => {
       <Container>
         <div className="content-wrap">
           <StepTitle>
-            <Heading>Heading Text Heading Text</Heading>
+            <Heading level="h2">Heading Text Heading Text</Heading>
             <Text size="xl" color="primary">
               Normal Text Normal Text Normal Text Normal Text Normal Text
               <br />
@@ -46,7 +46,7 @@ const Home = () => {
       <Container>
         <div className="content-wrap">
           <StepTitle>
-            <Heading>Heading Text Heading Text</Heading>
+            <Heading level="h2">Heading Text Heading Text</Heading>
             <Text size="xl" color="primary">
               Normal Text Normal Text Normal Text Normal Text Normal Text
               <br />
@@ -58,7 +58,7 @@ const Home = () => {
       <Container>
         <div className="content-wrap">
           <StepTitle>
-            <Heading>Heading Text Heading Text</Heading>
+            <Heading level="h2">Heading Text Heading Text</Heading>
             <Text size="xl" color="primary">
               Normal Text Normal Text Normal Text Normal Text Normal Text
               <br />
