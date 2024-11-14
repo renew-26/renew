@@ -22,7 +22,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    row-gap: var(--hds-4);
+    row-gap: var(--hds-2);
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -69,7 +69,7 @@
 
     &-copyright {
       flex-direction: column;
-      row-gap: var(--hds-2);
+      row-gap: var(--hds-4);
     }
   }
 }
