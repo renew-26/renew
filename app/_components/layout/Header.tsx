@@ -10,25 +10,20 @@ export default function Header() {
     <header className={PREFIX}>
       <Container>
         <Link href="/" className="link-item header-logo">
-          <Heading size={3} className="pl-6 pr-6 pc-content">
-            Logo
-          </Heading>
-          <div className="mobile-content">H</div>
+          <Heading size={3}>Renew</Heading>
         </Link>
 
         <nav className={`${PREFIX}-nav`} role="navigation">
           <Stack className="nav-inner" gap={4}>
             <Link href="/page1" className="link-item link-company">
-              <Text color="primary" size="lg" className="pc-content">
+              <Text color="primary" size="lg">
                 회사소개
               </Text>
-              <div className="mobile-content">C</div>
             </Link>
             <Link href="/page2" className="link-item link-blog">
-              <Text color="primary" size="lg" className="pc-content">
+              <Text color="primary" size="lg">
                 블로그
               </Text>
-              <div className="mobile-content">B</div>
             </Link>
             <Link
               target="_blank"
@@ -36,10 +31,9 @@ export default function Header() {
               rel="noopener"
               className="link-item link-form"
             >
-              <Text color="primary" size="lg" className="pc-content">
+              <Text color="primary" size="lg">
                 견적 문의
               </Text>
-              <div className="mobile-content">Q</div>
             </Link>
           </Stack>
         </nav>
