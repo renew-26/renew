@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Main({ children }: { children: React.ReactNode }) {
-  const PREFIX = 'wrapper';
+  const PREFIX = 'docs-wrap';
 
   return <div className={PREFIX}>{children}</div>;
 }
