@@ -13,16 +13,16 @@ export default function Header() {
           <Heading size={3}>Renew</Heading>
         </Link>
 
-        <nav className={`${PREFIX}-nav`} role="navigation">
-          <Stack className="nav-inner" gap={4}>
+        <nav className={`${PREFIX}-nav pb-1`} role="navigation">
+          <Stack className="nav-inner" gap={3}>
             <Link href="/page1" className="link-item link-company">
               <Text color="primary" size="lg">
-                회사소개
+                회사 소개
               </Text>
             </Link>
             <Link href="/page2" className="link-item link-blog">
               <Text color="primary" size="lg">
-                블로그
+                시공 사진
               </Text>
             </Link>
             <Link
