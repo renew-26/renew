@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Heading } from 'hyun-design-system';
+import { Heading, Container, Stack, Text } from 'hyun-design-system';
 import Link from 'next/link';
 
 export default function Header() {
@@ -8,9 +8,36 @@ export default function Header() {
 
   return (
     <header className={PREFIX}>
-      <Link href="/page1">Page 1</Link>
-      <Heading className={'pl-6 pr-6'}>Header</Heading>
-      <Link href="/page2">Page 2</Link>
+      <Container>
+        <Link href="/" className="link-item header-logo">
+          <Heading size={3}>Renew</Heading>
+        </Link>
+
+        <nav className={`${PREFIX}-nav`} role="navigation">
+          <Stack className="nav-inner" gap={4}>
+            <Link href="/page1" className="link-item link-company">
+              <Text color="primary" size="lg">
+                회사소개
+              </Text>
+            </Link>
+            <Link href="/page2" className="link-item link-blog">
+              <Text color="primary" size="lg">
+                블로그
+              </Text>
+            </Link>
+            <Link
+              target="_blank"
+              href="https://forms.gle/oQRTYchU5hEPesT3A"
+              rel="noopener"
+              className="link-item link-form"
+            >
+              <Text color="primary" size="lg">
+                견적 문의
+              </Text>
+            </Link>
+          </Stack>
+        </nav>
+      </Container>
     </header>
   );
 }
