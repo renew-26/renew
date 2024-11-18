@@ -7,7 +7,7 @@ import StepTitle from '@components/StepTitle';
 export default function HeroSection() {
   const PREFIX = 'section-hero';
   return (
-    <section className={PREFIX}>
+    <section className={`section ${PREFIX}`}>
       <StepTitle>
         <Heading level="h2" size={2}>
           Hero Section

@@ -1,6 +1,15 @@
 // Main Docs Style
-.section {
-  text-align: center;
+$section-z-index: 1;
+
+.docs-wrap {
+  .section {
+    position: relative;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+  }
 }
 
 .section-hero {
@@ -11,5 +20,88 @@
 
   > div {
     text-align: center;
+  }
+}
+
+.section-performance {
+  height: auto;
+  padding-bottom: 100px;
+
+  .container {
+    z-index: $section-z-index;
+  }
+
+  .performance-text {
+    padding-top: 100px;
+
+    .h2 {
+      color: var(--white);
+      .next-line {
+        display: none;
+      }
+    }
+
+    .box-wrap {
+      margin: 0 auto;
+      max-width: 1200px;
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--hds-2);
+        max-width: 400px;
+        height: auto;
+        padding: var(--hds-8) 0;
+        background-color: var(--wall-color);
+        border-color: var(--wall-color);
+
+        .h4 {
+          color: var(--point-color);
+        }
+
+        .text {
+          font-size: 20px;
+          color: var(--white);
+        }
+      }
+    }
+  }
+
+  .bg-wall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 300px;
+    background-color: var(--point-color);
+    z-index: 0;
+  }
+
+  @media screen and (max-width: 991px) {
+    .box-wrap {
+      gap: var(--hds-4);
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    .performance-text {
+      .h2 {
+        line-height: 110%;
+
+        .next-line {
+          display: block;
+        }
+      }
+    }
+
+    .box-wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bg-wall {
+      height: 705px;
+    }
   }
 }
