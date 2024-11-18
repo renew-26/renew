@@ -3,12 +3,11 @@
 import { Container, Heading, Text } from 'hyun-design-system';
 
 import StepTitle from '@components/StepTitle';
-import HeroSection from '@layout/section/HeroSection';
 
 const Home = () => {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
       <section className="section-hero section">
         <Container>
           <div className="content-wrap">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Text, Stack } from 'hyun-design-system';
+import { Container, Text, Stack, Heading } from 'hyun-design-system';
 import Image from 'next/image';
 
 export default function Footer() {
@@ -9,18 +9,23 @@ export default function Footer() {
   return (
     <footer className={PREFIX}>
       <Container>
+        <Heading level="h6" size={6} color="primary" className="pb-1">
+          주식회사 ReNew
+        </Heading>
         <div className="footer-text">
-          <Stack className="footer-info" gap={4}>
-            <Text size="sm">㈜ReNew 대표: 김동현</Text>
-            <Text size="sm">사업자등록번호: *****-******</Text>
-            <Text size="sm">주소: 동대문구 답십리로 **길 **</Text>
-            <Text size="sm">전화: 010-****-****</Text>
-            <Text size="sm">이메일: k010111323@gmail.com</Text>
+          <Stack className="footer-info" direction="col" gap={0}>
+            <Text>(주) ReNew 대표: 김동현</Text>
+            <Text>주소: 서울특별시 동대문구 답십리로 1길 11, 1층 1호</Text>
+            <Stack className="footer-info" direction="row" gap={2}>
+              <Text size="sm">사업자등록번호: 111-11-23131</Text>
+              <Text size="sm">대표번호: 070-2213-2231</Text>
+              <Text size="sm">이메일: k0102323232@gmail.com</Text>
+            </Stack>
           </Stack>
         </div>
 
         <div className="footer-copyright">
-          <Text color="tertiary">©COPYRIGHT (주)ReNew. All Rights Reserved.</Text>
+          <Text color="tertiary">©COPYRIGHT (주) ReNew. All Rights Reserved.</Text>
           <ul className="footer-link">
             <li>
               <a target="_blank" href="네이버블로그 주소" className="link-item link-naver">
