@@ -1,11 +1,10 @@
-// root
-@import './hds/root';
+@import 'variables';
+@import 'root';
 
 // HDS
 @import 'hyun-design-system/dist/style.css';
 
-// Project
-@import './hds/base';
+@import 'base';
 @import 'layout';
 @import 'app';
 @import 'docs';
