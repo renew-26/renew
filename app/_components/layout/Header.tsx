@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 
 import { Heading, Container, Stack, Text } from 'hyun-design-system';

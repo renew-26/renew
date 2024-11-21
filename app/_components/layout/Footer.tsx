@@ -1,7 +1,9 @@
+'use client';
 import React from 'react';
 
 import { Container, Text, Stack, Heading } from 'hyun-design-system';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   const PREFIX = 'footer';
@@ -28,24 +30,24 @@ export default function Footer() {
           <Text color="tertiary">©COPYRIGHT (주) ReNew. All Rights Reserved.</Text>
           <ul className="footer-link">
             <li>
-              <a target="_blank" href="네이버블로그 주소" className="link-item link-naver">
+              <Link target="_blank" href="네이버블로그 주소" className="link-item link-naver">
                 <Image src={'/sns-icon/icon_naver.png'} width={30} height={30} alt="네이버 아이콘" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 target="_blank"
                 href="https://open.kakao.com/o/{오픈채팅방ID}"
                 rel="noopener"
                 className="link-item link-kakao"
               >
                 <Image src={'/sns-icon/icon_kakao.png'} width={30} height={30} alt="카카오톡 아이콘" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="mailto:이메일주소" className="link-item link-email">
+              <Link href="mailto:이메일주소" className="link-item link-email">
                 <Image src={'/sns-icon/icon_email.png'} width={30} height={30} alt="이메일 아이콘" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
