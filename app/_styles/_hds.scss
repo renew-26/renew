@@ -1,0 +1,54 @@
+// Text Color
+.fc--primary {
+  color: var(--main-text-color);
+}
+
+.fc--secondary {
+  color: var(--sub-text-color);
+}
+
+.fc--tertiary {
+  color: var(--white);
+}
+
+// Text Size
+.text {
+  &--md {
+    font-size: var(--text-md-font-size);
+    line-height: var(--text-md-line-height);
+    font-weight: var(--text-md-font-weight);
+  }
+
+  &--lg {
+    font-size: var(--text-lg-font-size);
+    line-height: var(--text-lg-line-height);
+    font-weight: var(--text-lg-font-weight);
+  }
+
+  &--xl {
+    font-size: var(--text-xl-font-size);
+    line-height: var(--text-xl-line-height);
+    font-weight: var(--text-xl-font-weight);
+  }
+}
+
+h5,
+.h5 {
+  font-size: var(--heading-text-sm-font-size);
+  line-height: var(--heading-text-sm-line-height);
+  font-weight: var(--heading-text-sm-font-weight);
+}
+
+h4,
+.h4 {
+  font-size: var(--heading-text-md-font-size);
+  line-height: var(--heading-text-md-line-height);
+  font-weight: var(--heading-text-md-font-weight);
+}
+
+h2,
+.h2 {
+  font-size: var(--heading-text-lg-font-size);
+  line-height: var(--heading-text-lg-line-height);
+  font-weight: var(--heading-text-lg-font-weight);
+}

@@ -68,28 +68,28 @@ $root-heading-size: map-merge(
 );
 
 // TextSize
-$text-sm-font-size: 16px !default;
-$text-sm-line-height: 24px !default;
-$text-sm-font-weight: 400 !default;
-$text-md-font-size: 18px !default;
-$text-md-line-height: 28px !default;
+$text-md-font-size: 16px !default;
+$text-md-line-height: 24px !default;
 $text-md-font-weight: 400 !default;
-$text-lg-font-size: 20px !default;
-$text-lg-line-height: 32px !default;
+$text-lg-font-size: 18px !default;
+$text-lg-line-height: 28px !default;
 $text-lg-font-weight: 400 !default;
+$text-xl-font-size: 20px !default;
+$text-xl-line-height: 32px !default;
+$text-xl-font-weight: 400 !default;
 
 $root-text-size: () !default;
 $root-text-size: map-merge(
   (
-    'text-sm-font-size': #{$text-sm-font-size},
-    'text-sm-line-height': #{$text-sm-line-height},
-    'text-sm-font-weight': #{$text-sm-font-weight},
     'text-md-font-size': #{$text-md-font-size},
     'text-md-line-height': #{$text-md-line-height},
     'text-md-font-weight': #{$text-md-font-weight},
     'text-lg-font-size': #{$text-lg-font-size},
     'text-lg-line-height': #{$text-lg-line-height},
     'text-lg-font-weight': #{$text-lg-font-weight},
+    'text-xl-font-size': #{$text-xl-font-size},
+    'text-xl-line-height': #{$text-xl-line-height},
+    'text-xl-font-weight': #{$text-xl-font-weight},
   ),
   $root-text-size
 );
@@ -108,3 +108,8 @@ $root-radius: map-merge(
   ),
   $root-radius
 );
+
+// Layout Style
+$layout-margin-x: 20px !default;
+$layout-z-index: 99 !default;
+$section-z-index: 1 !default;

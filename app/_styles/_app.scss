@@ -1,5 +1,3 @@
-// App Component Style
-
 // AppBox
 .box {
   position: relative;
@@ -54,38 +52,4 @@
   display: flex;
   flex-direction: column;
   row-gap: var(--hds-4);
-
-  & > * {
-    line-height: 120%;
-  }
-
-  .h1 {
-    font-size: var(--hds-11);
-  }
-
-  .text {
-    font-size: var(--hds-6);
-  }
-
-  @media screen and (max-width: 991px) {
-    row-gap: var(--hds-3);
-
-    .h1 {
-      font-size: var(--hds-10);
-    }
-
-    .text {
-      font-size: var(--hds-5);
-    }
-  }
-
-  @media screen and (max-width: 512px) {
-    .h1 {
-      font-size: var(--hds-8);
-    }
-
-    .text {
-      font-size: 18px;
-    }
-  }
 }
