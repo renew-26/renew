@@ -1,0 +1,42 @@
+// Text Color
+.fc--primary {
+  color: var(--main-text-color);
+}
+
+.fc--secondary {
+  color: var(--sub-text-color);
+}
+
+.fc--tertiary {
+  color: var(--white);
+}
+
+.docs-wrap {
+  .container {
+    // Heading Text
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+      @include break-point-heading-size;
+    }
+
+    // Text
+    .text {
+      @include break-point-text-size;
+    }
+
+    // Step Title
+    .step-title {
+      display: flex;
+      flex-direction: column;
+      @include break-point-interval-gap;
+    }
+  }
+}
