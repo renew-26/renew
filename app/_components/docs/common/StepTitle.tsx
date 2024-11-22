@@ -14,7 +14,7 @@ interface AppAosProps {
   className?: string | string[];
 }
 
-const AppAos: React.FC<AppAosProps> = ({ children, animation = 'fade-up', duration = 1000, delay = 0, className }) => {
+const AppAos: React.FC<AppAosProps> = ({ children, animation = 'fade-up', duration = 1200, delay = 100, className }) => {
   const PREFIX = 'step-title';
 
   useEffect(() => {

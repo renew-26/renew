@@ -1,26 +1,14 @@
 'use client';
 
-import { Accordion, Container, Heading, Text } from 'hyun-design-system';
-
 import StepTitle from '@components/StepTitle';
+import Hero from '@sections/Hero';
+import { Accordion, Container, Heading, Text } from 'hyun-design-system';
 
 const Home = () => {
   return (
     <>
+      <Hero />
       <section className="section">
-        <Container>
-          <div className="content-wrap">
-            <StepTitle>
-              <Heading size={2} level="h2">
-                동영상 또는 Full Bg
-              </Heading>
-              <Text color="primary">
-                관련 사진 또는 영상을 배치할 예정
-                <br />딤 띄워서 배경 위 하얀색 텍스트
-              </Text>
-            </StepTitle>
-          </div>
-        </Container>
         <Container>
           <div className="content-wrap">
             <StepTitle>
