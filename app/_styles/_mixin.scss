@@ -44,3 +44,11 @@
     gap: var(--hds-3);
   }
 }
+
+@mixin app-box {
+  padding: var(--hds-5);
+
+  @media screen and (max-width: $grid-break-point-lg) {
+    padding: var(--hds-4);
+  }
+}

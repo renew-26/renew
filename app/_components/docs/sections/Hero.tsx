@@ -1,12 +1,15 @@
 import React from 'react';
 
-import StepTitle from '@components/StepTitle';
 import { Container, Heading, Text } from 'hyun-design-system';
 
+import StepTitle from '@components/StepTitle';
+
 export default function Hero() {
+  const PREFIX = 'hero';
+
   return (
-    <section id="hero" className="section section-hero">
-      <Container className="section-hero__wrap">
+    <section id={PREFIX} className={`section section-${PREFIX}`}>
+      <Container className={`section-${PREFIX}__wrap`}>
         <div className="bg-area"></div>
         <StepTitle>
           <Heading size={2} level="h2" color="tertiary">

@@ -1,13 +1,16 @@
 'use client';
 
+import { Accordion, Container, Heading, Text } from 'hyun-design-system';
+
 import StepTitle from '@components/StepTitle';
 import Hero from '@sections/Hero';
-import { Accordion, Container, Heading, Text } from 'hyun-design-system';
+import Performance from '@sections/Performance';
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <Performance />
       <section className="section">
         <Container>
           <div className="content-wrap">
