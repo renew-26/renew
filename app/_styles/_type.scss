@@ -1,0 +1,25 @@
+// Font Color
+@each $color, $props in $font-colors {
+  .fc--#{$color} {
+    color: $props;
+  }
+}
+
+// Heading
+@each $heading, $props in $heading-sizes {
+  #{$heading},
+  .#{$heading} {
+    font-size: nth($props, 1);
+    line-height: nth($props, 2);
+    font-weight: 700;
+  }
+}
+
+// Text
+@each $size, $props in $text-sizes {
+  .text--#{$size} {
+    font-size: nth($props, 1);
+    line-height: nth($props, 2);
+    font-weight: 400;
+  }
+}

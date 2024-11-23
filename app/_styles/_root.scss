@@ -7,14 +7,6 @@
     --#{$key}: #{$value};
   }
 
-  @each $key, $value in $root-heading-size {
-    --#{$key}: #{$value};
-  }
-
-  @each $key, $value in $root-text-size {
-    --#{$key}: #{$value};
-  }
-
   @each $key, $value in $root-radius {
     --#{$key}: #{$value};
   }

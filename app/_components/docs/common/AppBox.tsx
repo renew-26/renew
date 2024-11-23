@@ -4,12 +4,12 @@ import classNames from '@utils/classNames';
 
 interface AppBoxProps {
   children: React.ReactNode;
-  bg?: 'gray' | 'blue' | 'green' | 'orange';
-  outline?: boolean;
+  bg?: 'blue' | 'white';
+  size?: 'sm' | 'md' | 'lg';
   className?: string | string[];
 }
 
-const AppBox: React.FC<AppBoxProps> = ({ children, bg = 'gray', outline = false, className }) => {
+const AppBox: React.FC<AppBoxProps> = ({ children, bg, size = 'lg', className }) => {
   const PREFIX = 'box';
 
   return (
@@ -17,7 +17,7 @@ const AppBox: React.FC<AppBoxProps> = ({ children, bg = 'gray', outline = false,
       className={classNames(
         PREFIX,
         bg && `${PREFIX}--${bg}`,
-        outline ? `${PREFIX}--outline` : '',
+        size && `${PREFIX}--${size}`,
         Array.isArray(className) ? className.join(' ') : className,
       )}
     >
