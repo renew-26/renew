@@ -7,19 +7,8 @@
 html,
 body {
   background-color: var(--white);
-  font-family: 'Pretendard', 'sans-serif';
-  color: var(--primary-text);
-}
-
-// Text Color
-.fc--primary {
-  color: var(--main-text-color);
-}
-
-.fc--secondary {
-  color: var(--sub-text-color);
-}
-
-.fc--tertiary {
-  color: var(--white);
+  font-family: 'Pretendard', '-apple-system', 'BlinkMacSystemFont', system-ui, 'Roboto', 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    sans-serif;
+  color: var(--main-text-colort);
 }

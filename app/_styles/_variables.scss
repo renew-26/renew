@@ -5,10 +5,12 @@ $main-point-color: #0ac290 !default;
 $sub-point-color: #d4f9f5 !default;
 $main-text-color: #2e3140 !default;
 $sub-text-color: #474c55 !default;
+$white-text-color: #fff !default;
 $light-gray-color: #f5fafe !default;
 $gray-color: #f5f6f7 !default;
 $dark-gray-color: #d0d0d2 !default;
 $wall-bg-color: #f0f8ff !default;
+$box-bg-color: #f8fafd !default;
 $box-shadow-color: 0px 0px 26px 0px #959da52e !default;
 
 $root-color: () !default;
@@ -18,14 +20,25 @@ $root-color: map-merge(
     'sub-point-color': #{$sub-point-color},
     'main-text-color': #{$main-text-color},
     'sub-text-color': #{$sub-text-color},
+    'white-text-color': #{$white-text-color},
     'light-gray-color': #{$light-gray-color},
     'gray-color': #{$gray-color},
     'dark-gray-color': #{$dark-gray-color},
     'wall-bg-color': #{$wall-bg-color},
+    'box-bg-color': #{$box-bg-color},
     'box-shadow-color': #{$box-shadow-color},
   ),
   $root-color
 );
+
+$font-colors: (
+  primary: $main-text-color,
+  secondaty: $sub-text-color,
+  tertiary: $white-text-color,
+  information: $main-point-color,
+);
+$heading-text-base-color: $main-text-color;
+$text-base-color: $sub-text-color;
 
 // Grid
 $grid-break-point-md: 597px !default;
@@ -40,58 +53,43 @@ $root-break-point: map-merge(
   $root-break-point
 );
 
-// HeadingSize
-$heading-text-sm-font-size: 24px !default;
-$heading-text-sm-line-height: 36px !default;
-$heading-text-sm-font-weight: 700 !default;
-$heading-text-md-font-size: 42px !default;
-$heading-text-md-line-height: 52px !default;
-$heading-text-md-font-weight: 700 !default;
-$heading-text-lg-font-size: 48px !default;
-$heading-text-lg-line-height: 56px !default;
-$heading-text-lg-font-weight: 700 !default;
-
-$root-heading-size: () !default;
-$root-heading-size: map-merge(
-  (
-    'heading-text-sm-font-size': #{$heading-text-sm-font-size},
-    'heading-text-sm-line-height': #{$heading-text-sm-line-height},
-    'heading-text-sm-font-weight': #{$heading-text-sm-font-weight},
-    'heading-text-md-font-size': #{$heading-text-md-font-size},
-    'heading-text-md-line-height': #{$heading-text-md-line-height},
-    'heading-text-md-font-weight': #{$heading-text-md-font-weight},
-    'heading-text-lg-font-size': #{$heading-text-lg-font-size},
-    'heading-text-lg-line-height': #{$heading-text-lg-line-height},
-    'heading-text-lg-font-weight': #{$heading-text-lg-font-weight},
-  ),
-  $root-heading-size
+// Font Size
+$text-sm-font-size: 14px !default;
+$text-md-font-size: 16px !default;
+$text-lg-font-size: 18px !default;
+$text-xl-font-size: 20px !default;
+$text-sm-line-height: 20px !default;
+$text-md-line-height: 24px !default;
+$text-lg-line-height: 28px !default;
+$text-xl-line-height: 32px !default;
+$text-sizes: (
+  sm: $text-sm-font-size $text-sm-line-height,
+  md: $text-md-font-size $text-md-line-height,
+  lg: $text-lg-font-size $text-lg-line-height,
+  xl: $text-xl-font-size $text-xl-line-height,
 );
 
-// TextSize
-$text-md-font-size: 16px !default;
-$text-md-line-height: 24px !default;
-$text-md-font-weight: 400 !default;
-$text-lg-font-size: 18px !default;
-$text-lg-line-height: 28px !default;
-$text-lg-font-weight: 400 !default;
-$text-xl-font-size: 20px !default;
-$text-xl-line-height: 32px !default;
-$text-xl-font-weight: 400 !default;
+// Heading Size
+$heading-6-font-size: 24px !default;
+$heading-5-font-size: 30px !default;
+$heading-4-font-size: 36px !default;
+$heading-3-font-size: 42px !default;
+$heading-2-font-size: 48px !default;
+$heading-1-font-size: 54px !default;
+$heading-6-line-height: 36px !default;
+$heading-5-line-height: 42px !default;
+$heading-4-line-height: 44px !default;
+$heading-3-line-height: 52px !default;
+$heading-2-line-height: 56px !default;
+$heading-1-line-height: 62px !default;
 
-$root-text-size: () !default;
-$root-text-size: map-merge(
-  (
-    'text-md-font-size': #{$text-md-font-size},
-    'text-md-line-height': #{$text-md-line-height},
-    'text-md-font-weight': #{$text-md-font-weight},
-    'text-lg-font-size': #{$text-lg-font-size},
-    'text-lg-line-height': #{$text-lg-line-height},
-    'text-lg-font-weight': #{$text-lg-font-weight},
-    'text-xl-font-size': #{$text-xl-font-size},
-    'text-xl-line-height': #{$text-xl-line-height},
-    'text-xl-font-weight': #{$text-xl-font-weight},
-  ),
-  $root-text-size
+$heading-sizes: (
+  h6: $heading-6-font-size $heading-6-line-height,
+  h5: $heading-5-font-size $heading-5-line-height,
+  h4: $heading-4-font-size $heading-4-line-height,
+  h3: $heading-3-font-size $heading-3-line-height,
+  h2: $heading-2-font-size $heading-2-line-height,
+  h1: $heading-1-font-size $heading-1-line-height,
 );
 
 // BorderRadius

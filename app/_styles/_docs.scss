@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
 
-    // S : section-hero
+    // S : hero
     &-hero {
       height: calc(100vh - 80px);
 
@@ -37,28 +37,15 @@
         }
       }
     }
-    // E : section-hero
+    // E : hero
+
+    // S : performance
+    &-performance {
+      height: 100vh;
+    }
+    // E : performance
   }
   .container {
-    // Heading Text
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4,
-    h5,
-    .h5,
-    h6,
-    .h6 {
-      @include break-point-heading-size;
-    }
-
-    // Text
-    .text {
-      @include break-point-text-size;
-    }
-
     // Step Title
     .step-title {
       position: relative;
@@ -75,6 +62,7 @@
       align-items: center;
       justify-content: center;
       row-gap: var(--hds-4);
+      background-color: var(--box-bg-color);
       border-radius: var(--border-radius-lg);
       @include app-box;
 
@@ -88,10 +76,6 @@
 
       &--sm {
         border-radius: var(--border-radius-sm);
-      }
-
-      &--gray {
-        background-color: var(--gray-color);
       }
 
       &--blue {
