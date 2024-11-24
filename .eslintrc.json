@@ -9,9 +9,18 @@
         "groups": ["builtin", "external", "internal"],
         "pathGroups": [
           {
-            "pattern": "react",
+            "pattern": "{react,next,next/**}",
             "group": "builtin",
             "position": "before"
+          },
+          {
+            "pattern": "@/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "{aos,aos/**,hyun-design-system,swiper,swiper/**}",
+            "group": "external",
+            "position": "after"
           }
         ],
         "pathGroupsExcludedImportTypes": ["react"],
@@ -22,5 +31,10 @@
         "newlines-between": "always"
       }
     ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }

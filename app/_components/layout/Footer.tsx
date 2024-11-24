@@ -1,9 +1,10 @@
 'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import { Container, Text, Stack, Heading } from 'hyun-design-system';
-import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Footer() {
   const PREFIX = 'footer';

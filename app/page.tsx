@@ -1,10 +1,12 @@
 'use client';
 
+
 import { Accordion, Container, Heading, Text } from 'hyun-design-system';
 
 import StepTitle from '@components/StepTitle';
 import Hero from '@sections/Hero';
 import Performance from '@sections/Performance';
+
 
 const Home = () => {
   return (

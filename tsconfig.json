@@ -20,8 +20,8 @@
     "baseUrl": "./app",
     "paths": {
       "@components/*": ["_components/docs/common/*"],
-      "@sections/*": ["_components/docs/sections/*"],
       "@layout/*": ["_components/layout/*"],
+      "@sections/*": ["_components/docs/sections/*"],
       "@styles/*": ["_styles/*"],
       "@utils/*": ["_utils/*"]
     }

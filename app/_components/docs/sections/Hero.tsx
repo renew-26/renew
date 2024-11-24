@@ -4,6 +4,8 @@ import { Container, Heading, Text } from 'hyun-design-system';
 
 import StepTitle from '@components/StepTitle';
 
+
+
 export default function Hero() {
   const PREFIX = 'hero';
 
