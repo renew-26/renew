@@ -22,35 +22,27 @@ export default function Performance() {
         if (entry.isIntersecting && !animationStarted && entry.intersectionRatio >= 0.5) {
           animationStarted = true;
 
-          let current1 = 0;
-          const interval1 = setInterval(() => {
-            current1 += 1;
-            if (current1 <= 95) {
-              setCount1(current1);
-            } else {
-              clearInterval(interval1);
-            }
-          }, 10);
+          const animateCounter = (
+            setter: React.Dispatch<React.SetStateAction<number>>,
+            target: number,
+            speed: number = 10,
+          ) => {
+            let current = 0;
+            const interval = setInterval(() => {
+              current += 1;
+              if (current <= target) {
+                setter(current);
+              } else {
+                clearInterval(interval);
+              }
+            }, speed);
+          };
 
-          let current2 = 0;
-          const interval2 = setInterval(() => {
-            current2 += 1;
-            if (current2 <= 5) {
-              setCount2(current2);
-            } else {
-              clearInterval(interval2);
-            }
-          }, 200);
-
-          let current3 = 0;
-          const interval3 = setInterval(() => {
-            current3 += 1;
-            if (current3 <= 15) {
-              setCount3(current3);
-            } else {
-              clearInterval(interval3);
-            }
-          }, 66);
+          setTimeout(() => {
+            animateCounter(setCount1, 95);
+            animateCounter(setCount2, 5, 200);
+            animateCounter(setCount3, 15, 66);
+          }, 300);
 
           observer.unobserve(entry.target);
         }
@@ -84,9 +76,7 @@ export default function Performance() {
             </>
           }
         >
-          <Text color="secondary">
-            고객과의 신뢰를 최우선으로  최상의 결과로 보답하겠습니다
-          </Text>
+          <Text color="secondary">고객과의 신뢰를 최우선으로 최상의 결과로 보답하겠습니다</Text>
         </StepTitle>
         <Stack className="box__wrap" gap={5}>
           <AppBox bg="white">
