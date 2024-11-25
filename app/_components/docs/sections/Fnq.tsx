@@ -14,16 +14,24 @@ export default function Fnq() {
 
         <Accordion>
           <Accordion.Item title="궁금해서 묻는 질문 1?">
-            <Text color="secondary">해당 내용에 대한 답변 1</Text>
+            <Text size="lg" color="secondary">
+              해당 내용에 대한 답변 1
+            </Text>
           </Accordion.Item>
           <Accordion.Item title="궁금해서 묻는 질문 2">
-            <Text color="secondary">해당 내용에 대한 답변 1</Text>
+            <Text size="lg" color="secondary">
+              해당 내용에 대한 답변 1
+            </Text>
           </Accordion.Item>
           <Accordion.Item title="궁금해서 묻는 질문 3">
-            <Text color="secondary">해당 내용에 대한 답변 1</Text>
+            <Text size="lg" color="secondary">
+              해당 내용에 대한 답변 1
+            </Text>
           </Accordion.Item>
           <Accordion.Item title="궁금해서 묻는 질문 4">
-            <Text color="secondary">해당 내용에 대한 답변 1</Text>
+            <Text size="lg" color="secondary">
+              해당 내용에 대한 답변 1
+            </Text>
           </Accordion.Item>
         </Accordion>
       </Container>
