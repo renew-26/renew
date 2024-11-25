@@ -16,3 +16,53 @@
     padding: var(--hds-4);
   }
 }
+
+@mixin responsive-typography($sizes) {
+  font-size: map-get($sizes, 'font-size-desktop');
+  line-height: map-get($sizes, 'line-height-desktop');
+  font-weight: map-get($sizes, 'font-weight-desktop');
+
+  @media screen and (max-width: $grid-break-point-lg) {
+    font-size: map-get($sizes, 'font-size-tablet');
+    line-height: map-get($sizes, 'line-height-tablet');
+    font-weight: map-get($sizes, 'font-weight-tablet');
+  }
+
+  @media screen and (max-width: $grid-break-point-md) {
+    font-size: map-get($sizes, 'font-size-mobile');
+    line-height: map-get($sizes, 'line-height-mobile');
+    font-weight: map-get($sizes, 'font-weight-mobile');
+  }
+}
+
+@mixin heading {
+  @include responsive-typography(
+    (
+      'font-size-desktop': 48px,
+      'line-height-desktop': 56px,
+      'font-weight-desktop': 700,
+      'font-size-tablet': 42px,
+      'line-height-tablet': 52px,
+      'font-weight-tablet': 700,
+      'font-size-mobile': 26px,
+      'line-height-mobile': 36px,
+      'font-weight-mobile': 700,
+    )
+  );
+}
+
+@mixin text {
+  @include responsive-typography(
+    (
+      'font-size-desktop': 20px,
+      'line-height-desktop': 32px,
+      'font-weight-desktop': 400,
+      'font-size-tablet': 18px,
+      'line-height-tablet': 28px,
+      'font-weight-tablet': 400,
+      'font-size-mobile': 16px,
+      'line-height-mobile': 24px,
+      'font-weight-mobile': 400,
+    )
+  );
+}

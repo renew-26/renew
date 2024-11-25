@@ -33,7 +33,7 @@ $root-color: map-merge(
 
 $font-colors: (
   primary: $main-text-color,
-  secondaty: $sub-text-color,
+  secondary: $sub-text-color,
   tertiary: $white-text-color,
   information: $main-point-color,
 );
@@ -70,7 +70,7 @@ $text-sizes: (
 );
 
 // Heading Size
-$heading-6-font-size: 24px !default;
+$heading-6-font-size: 26px !default;
 $heading-5-font-size: 30px !default;
 $heading-4-font-size: 36px !default;
 $heading-3-font-size: 42px !default;
