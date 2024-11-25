@@ -10,10 +10,10 @@
 }
 
 @mixin app-box {
-  padding: var(--hds-5);
+  padding: var(--hds-8) 0;
 
   @media screen and (max-width: $grid-break-point-lg) {
-    padding: var(--hds-4);
+    padding: var(--hds-6) 0;
   }
 }
 

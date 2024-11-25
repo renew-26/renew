@@ -3,6 +3,11 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    border-bottom: 1px solid #000;
+
+    .step-title {
+      text-align: center;
+    }
 
     // S : hero
     &-hero {
@@ -31,17 +36,35 @@
           animation: bgScaleUp 10s both;
           animation-delay: 0.5s;
         }
-
-        .step-title {
-          text-align: center;
-        }
       }
     }
     // E : hero
 
     // S : performance
     &-performance {
-      height: 100vh;
+      height: auto;
+      padding-bottom: var(--hds-10);
+
+      .container {
+        height: auto;
+        min-height: 65vh;
+      }
+
+      .step-title {
+        padding-top: var(--hds-14);
+        padding-bottom: 85px;
+      }
+
+      .box__wrap {
+        max-width: 1340px;
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width: $grid-break-point-md) {
+        .box__wrap {
+          flex-direction: column;
+        }
+      }
     }
     // E : performance
   }

@@ -14,17 +14,6 @@ const Home = () => {
       <section className="section">
         <Container>
           <div className="content-wrap">
-            <StepTitle title="퍼포먼스 섹션">
-              <Text>
-                경력, 지원금 내역, 고객 만족도 등
-                <br />
-                박스 형태로 나열 할 예정
-              </Text>
-            </StepTitle>
-          </div>
-        </Container>
-        <Container>
-          <div className="content-wrap">
             <StepTitle title="진척도 공유 및 작업 현황 공유">
               <Text color="primary">
                 작업 도착 및 작업 시작 알림
