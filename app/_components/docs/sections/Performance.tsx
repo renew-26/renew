@@ -30,7 +30,7 @@ export default function Performance() {
             } else {
               clearInterval(interval1);
             }
-          }, 7);
+          }, 10);
 
           let current2 = 0;
           const interval2 = setInterval(() => {
@@ -40,7 +40,7 @@ export default function Performance() {
             } else {
               clearInterval(interval2);
             }
-          }, 133);
+          }, 200);
 
           let current3 = 0;
           const interval3 = setInterval(() => {
@@ -50,7 +50,7 @@ export default function Performance() {
             } else {
               clearInterval(interval3);
             }
-          }, 45);
+          }, 66);
 
           observer.unobserve(entry.target);
         }
@@ -78,10 +78,16 @@ export default function Performance() {
         <StepTitle
           title={
             <>
-              <span className="fc--information">신뢰</span>로 다져진 믿을 수 있는 업체
+              <span className="fc--information">신뢰</span>로 다져진
+              <br className="next-line" />
+              믿을 수 있는 업체
             </>
           }
-        />
+        >
+          <Text color="secondary">
+            고객과의 신뢰를 최우선으로  최상의 결과로 보답하겠습니다
+          </Text>
+        </StepTitle>
         <Stack className="box__wrap" gap={5}>
           <AppBox bg="white">
             <Image src={'/image/tmp.png'} width={75} height={75} alt="아이콘" className="mb-2" />
