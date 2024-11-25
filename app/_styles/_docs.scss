@@ -68,6 +68,41 @@
       }
     }
     // E : performance
+
+    &-fnq {
+      background-color: $box-bg-color;
+
+      &__wrap {
+        padding-bottom: $section-margin-y-4 !important;
+
+        .step-title {
+          padding-bottom: $section-margin-y-2;
+        }
+      }
+
+      .accordion {
+        background-color: $box-bg-color;
+
+        &__header {
+          border-color: $dark-gray-color;
+          font-size: $text-xl-font-size;
+          line-height: $text-xl-line-height;
+          font-weight: 600;
+        }
+
+        &__item {
+          &:not(.collapsed) {
+            .accordion__header {
+              border: none;
+            }
+          }
+        }
+
+        &__body {
+          border-color: $dark-gray-color;
+        }
+      }
+    }
   }
   .container {
     // Step Title
