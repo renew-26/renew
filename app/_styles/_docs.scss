@@ -43,16 +43,15 @@
     // S : performance
     &-performance {
       height: auto;
-      padding-bottom: var(--hds-10);
 
-      .container {
+      &__wrap {
         height: auto;
-        min-height: 65vh;
-      }
+        padding-top: $section-margin-y-4;
+        padding-bottom: $section-margin-y-4;
 
-      .step-title {
-        padding-top: var(--hds-14);
-        padding-bottom: 85px;
+        .step-title {
+          padding-bottom: $section-margin-y-2;
+        }
       }
 
       .box__wrap {
@@ -61,6 +60,15 @@
       }
 
       @media screen and (max-width: $grid-break-point-md) {
+        &__wrap {
+          padding-top: $section-margin-y-4;
+          padding-bottom: $section-margin-y-4;
+        }
+
+        .step-title {
+          text-align: left;
+        }
+
         .box__wrap {
           flex-direction: column;
         }
@@ -81,6 +89,16 @@
       }
       .text {
         @include text;
+      }
+
+      .next-line {
+        display: none;
+      }
+
+      @media screen and (max-width: $grid-break-point-md) {
+        .next-line {
+          display: block;
+        }
       }
     }
 
