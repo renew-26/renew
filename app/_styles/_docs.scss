@@ -3,7 +3,16 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    border-bottom: 1px solid #000;
+
+    &:not(.section-hero) {
+      .container {
+        max-width: 1340px;
+        height: auto;
+        margin: 0 auto;
+        padding-top: $section-margin-y-4;
+        padding-bottom: $section-margin-y-3;
+      }
+    }
 
     .step-title {
       text-align: center;
@@ -44,27 +53,11 @@
     &-performance {
       height: auto;
 
-      &__wrap {
-        height: auto;
-        padding-top: $section-margin-y-4;
-        padding-bottom: $section-margin-y-4;
-
-        .step-title {
-          padding-bottom: $section-margin-y-2;
-        }
-      }
-
-      .box__wrap {
-        max-width: 1340px;
-        margin: 0 auto;
+      .step-title {
+        padding-bottom: $section-margin-y-2;
       }
 
       @media screen and (max-width: $grid-break-point-md) {
-        &__wrap {
-          padding-top: $section-margin-y-4;
-          padding-bottom: $section-margin-y-4;
-        }
-
         .step-title {
           text-align: left;
         }
