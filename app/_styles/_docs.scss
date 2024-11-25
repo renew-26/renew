@@ -52,6 +52,13 @@
       display: flex;
       flex-direction: column;
       @include break-point-interval-gap;
+
+      .h2 {
+        @include heading;
+      }
+      .text {
+        @include text;
+      }
     }
 
     // Box

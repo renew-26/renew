@@ -1,12 +1,10 @@
 'use client';
 
-
-import { Accordion, Container, Heading, Text } from 'hyun-design-system';
+import { Accordion, Container, Text } from 'hyun-design-system';
 
 import StepTitle from '@components/StepTitle';
 import Hero from '@sections/Hero';
 import Performance from '@sections/Performance';
-
 
 const Home = () => {
   return (
@@ -16,11 +14,8 @@ const Home = () => {
       <section className="section">
         <Container>
           <div className="content-wrap">
-            <StepTitle>
-              <Heading size={2} level="h2">
-                퍼포먼스 섹션
-              </Heading>
-              <Text color="primary">
+            <StepTitle title="퍼포먼스 섹션">
+              <Text>
                 경력, 지원금 내역, 고객 만족도 등
                 <br />
                 박스 형태로 나열 할 예정
@@ -30,10 +25,7 @@ const Home = () => {
         </Container>
         <Container>
           <div className="content-wrap">
-            <StepTitle>
-              <Heading size={2} level="h2">
-                진척도 공유 및 작업 현황 공유
-              </Heading>
+            <StepTitle title="진척도 공유 및 작업 현황 공유">
               <Text color="primary">
                 작업 도착 및 작업 시작 알림
                 <br />
@@ -46,10 +38,7 @@ const Home = () => {
         </Container>
         <Container>
           <div className="content-wrap">
-            <StepTitle>
-              <Heading size={2} level="h2">
-                고객 만족이 우선입니다.
-              </Heading>
+            <StepTitle title="고객 만족이 우선입니다.">
               <Text color="primary">
                 가격 후불제
                 <br />
@@ -62,10 +51,7 @@ const Home = () => {
         </Container>
         <Container>
           <div className="content-wrap">
-            <StepTitle>
-              <Heading size={2} level="h2">
-                고객의 편리가 우선입니다.
-              </Heading>
+            <StepTitle title="고객의 편리가 우선입니다.">
               <Text color="primary">
                 고객 체크 리스트 작성 하게끔
                 <br />
@@ -76,10 +62,7 @@ const Home = () => {
         </Container>
         <Container>
           <div className="content-wrap">
-            <StepTitle>
-              <Heading size={2} level="h2">
-                희망 리턴 패키지
-              </Heading>
+            <StepTitle title="희망 리턴 패키지">
               <Text color="primary">
                 신청 절차 안내
                 <br />
@@ -90,11 +73,13 @@ const Home = () => {
         </Container>
         <Container>
           <div className="content-wrap">
-            <StepTitle>
-              <Heading size={2} level="h2">
-                자주 묻는 질문
-              </Heading>
-            </StepTitle>
+            <StepTitle
+              title={
+                <>
+                  자주 묻는 <span>질문</span>
+                </>
+              }
+            ></StepTitle>
           </div>
           <Accordion>
             <Accordion.Item title="궁금해서 묻는 질문 1?">해당 내용에 대한 답변 1</Accordion.Item>
